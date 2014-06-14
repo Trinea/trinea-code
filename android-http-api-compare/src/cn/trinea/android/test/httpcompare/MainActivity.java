@@ -23,7 +23,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 /**
- * Test HttpURLConnection and apache HttpClient
+ * Test HttpURLConnection and apache HttpClient, the more you can see <a
+ * href="http://www.trinea.cn/android/android-http-api-compare/ ‎" target="_blank">Android Http Api Compare</a>
  * 
  * @author <a href="http://www.trinea.cn/" target="_blank">Trinea</a>
  * 
