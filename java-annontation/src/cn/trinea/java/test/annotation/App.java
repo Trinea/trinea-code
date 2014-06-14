@@ -12,11 +12,10 @@ package cn.trinea.java.test.annotation;
  * 
  * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2014年4月24日
  */
-public class AnnotationExample {
+public class App {
 
     @MethodInfo(
                 author = "gengxinwu@anjuke.com",
-                comments = AnnotationExample.class,
                 date = "2014/02/14",
                 version = 2)
     public String getAppName() {

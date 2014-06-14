@@ -19,14 +19,13 @@ import java.lang.annotation.Target;
  * 
  * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2014年4月24日
  */
+@Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 @Inherited
 public @interface MethodInfo {
 
-    abstract String author() default "trinea";
-
-    Class<AnnotationExample> comments();
+    String author() default "jim@anjuke.com";
 
     String date();
 

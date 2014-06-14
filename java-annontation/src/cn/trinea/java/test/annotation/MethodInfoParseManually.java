@@ -10,24 +10,26 @@ package cn.trinea.java.test.annotation;
 import java.lang.reflect.Method;
 
 /**
- * AnnotationParsing
+ * MethodInfoParseManually
  * 
  * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2014年4月24日
  */
-public class AnnotationParsing {
+public class MethodInfoParseManually {
 
+    @SuppressWarnings("rawtypes")
     public static void main(String[] args) {
 
         try {
-            Class cls = AnnotationParsing.class.getClassLoader().loadClass("cn.trinea.java.test.annotation.AnnotationExample");
+            Class cls = Class.forName("cn.trinea.java.test.annotation.App");
             for (Method method : cls.getMethods()) {
                 MethodInfo methodInfo = method.getAnnotation(MethodInfo.class);
                 if (methodInfo != null) {
-                    System.out.println(methodInfo.author());
+                    System.out.println("method name:" + method.getName());
+                    System.out.println("method author:" + methodInfo.author());
+                    System.out.println("method version:" + methodInfo.version());
+                    System.out.println("method date:" + methodInfo.date());
                 }
             }
-        } catch (SecurityException e) {
-            e.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
