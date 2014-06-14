@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">http-api-compare</string>
+    <string name="use_url_connection">Http Get Use HttpURLConnection</string>
+    <string name="use_http_client">Http Get Use HttpClient</string>
+    <string name="wating">Watting……</string>
+
+</resources>
